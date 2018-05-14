@@ -1,0 +1,9 @@
+<h1><strong>Longest Word Game</strong></h1>
+<h2>Letters: <%= @letters %></h2>
+<form action="/score" method="get">
+  <input type="text" name="attempt" placeholder="Type in your word:">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="hidden" name="grid" value="<%= @letters %>">
+  <input type="submit" value="Go">
+</form>
+
